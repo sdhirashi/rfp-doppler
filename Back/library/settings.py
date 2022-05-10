@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'library.editorial',
     'library.users',
     'library.books',
+    'library.doppler'
 ]
 
 MIDDLEWARE = [
