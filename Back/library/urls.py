@@ -24,8 +24,8 @@ urlpatterns += [
     path('admin/', admin.site.urls),
     path('api_auth/', include('rest_framework.urls')),
     path('users/', include('library.users.urls')),
-    path('books/', include('library.books.urls')),
-    path('books/', include('library.doppler.urls')),
+   # path('books/', include('library.books.urls')),
+    path('doppler/', include('library.doppler.urls')),
 ]
 
 

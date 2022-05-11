@@ -5,7 +5,7 @@ class ArtistSerializer(serializers.ModelSerializer):
     artistid = serializers.StringRelatedField(many = True, read_only = True)
     class Meta:
         model = Artist
-        fields = ['id','name','stagename','nationality','artistid']
+        fields = ['id','name','stagename','nationality','cover','artistid']
 
 class GenreSerializer(serializers.ModelSerializer):
     genreid = serializers.StringRelatedField(many = True, read_only = True)

@@ -4,6 +4,7 @@ class Artist(models.Model):
     name = models.CharField(max_length=100, null = False)
     stagename = models.CharField(max_length=128, null = False)
     nationality = models.CharField(max_length=128, null = False)
+    cover = models.TextField(null=False, default='image')
 
 class Genre(models.Model):
     name = models.CharField(max_length=40, null = False)
